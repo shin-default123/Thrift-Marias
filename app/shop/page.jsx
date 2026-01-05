@@ -1,13 +1,13 @@
 'use client';
 
-import { useState, useMemo } from 'react';
+import { useState, useMemo, Suspense } from 'react';
 import { useSearchParams, useRouter } from 'next/navigation';
 import CategoryFilter from '../../components/category-filter';
 import ProductGrid from '../../components/product-grid';
 import { products } from '../../libs/data';
-import { Filter, SlidersHorizontal, X } from 'lucide-react';
+import { Filter, SlidersHorizontal, X, Loader2 } from 'lucide-react';
 
-export default function ShopPage() {
+function ShopContent() {
   const searchParams = useSearchParams();
   const router = useRouter();
   
@@ -52,7 +52,6 @@ export default function ShopPage() {
     return result;
   }, [selectedCategory, selectedGender, maxPrice, selectedConditions, sortOption]);
 
-  // Handlers
   const handleGenderChange = (gender) => {
     setSelectedGender(gender);
     const params = new URLSearchParams(searchParams.toString());
@@ -80,6 +79,7 @@ export default function ShopPage() {
 
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      {/* Page Header */}
       <div className="mb-10 md:mb-16 text-center md:text-left">
         <h1 className="text-4xl md:text-5xl font-bold font-serif mb-4 text-foreground">
           Thrift Store
@@ -233,5 +233,20 @@ export default function ShopPage() {
         </div>
       </div>
     </div>
+  );
+}
+
+export default function ShopPage() {
+  return (
+    <Suspense fallback={
+      <div className="min-h-screen flex items-center justify-center">
+        <div className="flex flex-col items-center gap-4">
+          <Loader2 className="w-8 h-8 animate-spin text-primary" />
+          <p className="text-muted-foreground">Loading products...</p>
+        </div>
+      </div>
+    }>
+      <ShopContent />
+    </Suspense>
   );
 }

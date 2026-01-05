@@ -1,0 +1,406 @@
+export const categories = [
+  { name: 'All', icon: '✨', gender: 'unisex' },
+  { name: 'Jackets', icon: '🧥', gender: 'men' },
+  { name: 'Jackets', icon: '🧥', gender: 'women' },
+  { name: 'Dresses', icon: '👗', gender: 'women' },
+  { name: 'Tops', icon: '👕', gender: 'men' },
+  { name: 'Tops', icon: '👕', gender: 'women' },
+];
+
+export const products = [
+  // --- WOMEN'S JACKETS (wj1 - wj6) ---
+  { 
+    id: 1, 
+    name: "Classic Denim Trucker", 
+    price: 450, 
+    category: "Jackets", 
+    gender: "women", 
+    rating: 5, 
+    description: "A timeless denim jacket with a vintage wash. Durable, stylish, and perfect for layering over any outfit.", 
+    size: "M-L", 
+    condition: "Excellent",
+    image: "/wj1.jpg"
+  },
+  { 
+    id: 2, 
+    name: "Corduroy Cropped Jacket", 
+    price: 380, 
+    category: "Jackets", 
+    gender: "women", 
+    rating: 5, 
+    description: "Soft corduroy texture in a modern cropped silhouette. Adds a touch of retro flair to your look.", 
+    size: "S-M", 
+    condition: "Like New",
+    image: "/wj2.jpg"
+  },
+  { 
+    id: 3, 
+    name: "Retro Windbreaker", 
+    price: 350, 
+    category: "Jackets", 
+    gender: "women", 
+    rating: 4, 
+    description: "Lightweight and colorful 90s style windbreaker. Perfect for breezy afternoons.", 
+    size: "S-M", 
+    condition: "Very Good",
+    image: "/wj3.jpg"
+  },
+  { 
+    id: 4, 
+    name: "Utility Field Jacket", 
+    price: 420, 
+    category: "Jackets", 
+    gender: "women", 
+    rating: 5, 
+    description: "Practical and chic with multiple pockets. A versatile piece for the on-the-go woman.", 
+    size: "S-M", 
+    condition: "Good",
+    image: "/wj4.jpg"
+  },
+  { 
+    id: 5, 
+    name: "Oversized Bomber", 
+    price: 480, 
+    category: "Jackets", 
+    gender: "women", 
+    rating: 5, 
+    description: "Cozy bomber jacket with a relaxed fit. Keeps you warm while looking effortlessly cool.", 
+    size: "S-M", 
+    condition: "Excellent",
+    image: "/wj5.jpg"
+  },
+  { 
+    id: 6, 
+    name: "Vintage Blazer", 
+    price: 300, 
+    category: "Jackets", 
+    gender: "women", 
+    rating: 4, 
+    description: "Structured vintage blazer. Ideal for smart-casual looks or office wear.", 
+    size: "S-M", 
+    condition: "Very Good",
+    image: "/wj6.jpg"
+  },
+
+  // --- WOMEN'S POLOS (wp1 - wp5) ---
+  { 
+    id: 7, 
+    name: "Striped Knit Polo", 
+    price: 220, 
+    category: "Tops", 
+    gender: "women", 
+    rating: 5, 
+    description: "Classic striped knit polo shirt. Breathable fabric with a preppy aesthetic.", 
+    size: "M-L", 
+    condition: "Like New",
+    image: "/wp1.jpg"
+  },
+  { 
+    id: 8, 
+    name: "Pastel Collar Tee", 
+    price: 200, 
+    category: "Tops", 
+    gender: "women", 
+    rating: 5, 
+    description: "Soft pastel polo with a delicate collar. Adds a gentle pop of color to your wardrobe.", 
+    size: "M-L", 
+    condition: "Excellent",
+    image: "/wp2.jpg"
+  },
+  { 
+    id: 9, 
+    name: "Ribbed Vintage Polo", 
+    price: 180, 
+    category: "Tops", 
+    gender: "women", 
+    rating: 4, 
+    description: "Ribbed texture polo top. Stretchy and comfortable for daily wear.", 
+    size: "M-L", 
+    condition: "Good",
+    image: "/wp3.jpg"
+  },
+  { 
+    id: 10, 
+    name: "Sporty Chic Polo", 
+    price: 250, 
+    category: "Tops", 
+    gender: "women", 
+    rating: 5, 
+    description: "Athletic inspired polo shirt. Great for a casual, sporty look.", 
+    size: "M-L", 
+    condition: "Very Good",
+    image: "/wp4.jpg"
+  },
+  { 
+    id: 11, 
+    name: "Fitted Baby Tee Polo", 
+    price: 150, 
+    category: "Tops", 
+    gender: "women", 
+    rating: 5, 
+    description: "Cute fitted polo in a smaller cut. Perfect for high-waisted jeans.", 
+    size: "S-SL", 
+    condition: "Like New",
+    image: "/wp5.jpg"
+  },
+
+  // --- MEN'S JACKETS (mj1 - mj10) ---
+  { 
+    id: 12, 
+    name: "Heavy Duty Work Jacket", 
+    price: 850, 
+    category: "Jackets", 
+    gender: "men", 
+    rating: 5, 
+    description: "Rugged workwear jacket built to last. Features a warm lining and durable exterior.", 
+    size: "XL", 
+    condition: "Excellent",
+    image: "/mj1.jpg"
+  },
+  { 
+    id: 13, 
+    name: "Vintage Varsity Jacket", 
+    price: 900, 
+    category: "Jackets", 
+    gender: "men", 
+    rating: 5, 
+    description: "Classic American varsity jacket with leather sleeves. A true statement piece.", 
+    size: "XL", 
+    condition: "Very Good",
+    image: "/mj2.jpg"
+  },
+  { 
+    id: 14, 
+    name: "Oversized Denim Jacket", 
+    price: 600, 
+    category: "Jackets", 
+    gender: "men", 
+    rating: 5, 
+    description: "Relaxed fit denim jacket in a dark wash. Essential streetwear staple.", 
+    size: "XL", 
+    condition: "Good",
+    image: "/mj3.jpg"
+  },
+  { 
+    id: 15, 
+    name: "Retro Track Jacket", 
+    price: 450, 
+    category: "Jackets", 
+    gender: "men", 
+    rating: 4, 
+    description: "Sporty track jacket with side stripes. Comfortable and stylish.", 
+    size: "XL", 
+    condition: "Like New",
+    image: "/mj4.jpg"
+  },
+  { 
+    id: 16, 
+    name: "Canvas Field Coat", 
+    price: 700, 
+    category: "Jackets", 
+    gender: "men", 
+    rating: 5, 
+    description: "Earth-toned canvas coat. plenty of pockets and a rugged look.", 
+    size: "XL", 
+    condition: "Excellent",
+    image: "/mj5.jpg"
+  },
+  { 
+    id: 17, 
+    name: "Nylon Coach Jacket", 
+    price: 400, 
+    category: "Jackets", 
+    gender: "men", 
+    rating: 4, 
+    description: "Lightweight nylon jacket with snap buttons. Great for layering.", 
+    size: "XL", 
+    condition: "Very Good",
+    image: "/mj6.jpg"
+  },
+  { 
+    id: 18, 
+    name: "Faux Leather Moto", 
+    price: 750, 
+    category: "Jackets", 
+    gender: "men", 
+    rating: 5, 
+    description: "Sleek moto-style jacket. Adds an edge to any outfit.", 
+    size: "L", 
+    condition: "Good",
+    image: "/mj7.jpg"
+  },
+  { 
+    id: 19, 
+    name: "Sherpa Lined Jacket", 
+    price: 800, 
+    category: "Jackets", 
+    gender: "men", 
+    rating: 5, 
+    description: "Warm sherpa lining for colder days. Comfortable and trendy.", 
+    size: "L", 
+    condition: "Excellent",
+    image: "/mj8.jpg"
+  },
+  { 
+    id: 20, 
+    name: "Harrington Jacket", 
+    price: 550, 
+    category: "Jackets", 
+    gender: "men", 
+    rating: 5, 
+    description: "Classic Harrington silhouette with a tartan lining.", 
+    size: "M", 
+    condition: "Like New",
+    image: "/mj9.jpg"
+  },
+  { 
+    id: 21, 
+    name: "Vintage Anorak", 
+    price: 500, 
+    category: "Jackets", 
+    gender: "men", 
+    rating: 4, 
+    description: "Pullover style anorak with a hood. Practical vintage gear.", 
+    size: "M", 
+    condition: "Very Good",
+    image: "/mj10.jpg"
+  },
+
+  // --- MEN'S POLOS (pm1 - pm5) ---
+  { 
+    id: 22, 
+    name: "Retro Colorblock Polo", 
+    price: 300, 
+    category: "Tops", 
+    gender: "men", 
+    rating: 5, 
+    description: "Bold colorblocking design from the 90s. Stand out from the crowd.", 
+    size: "XL", 
+    condition: "Excellent",
+    image: "/pm1.jpg"
+  },
+  { 
+    id: 23, 
+    name: "Classic Pique Polo", 
+    price: 250, 
+    category: "Tops", 
+    gender: "men", 
+    rating: 5, 
+    description: "Traditional cotton pique polo in a solid color. A wardrobe essential.", 
+    size: "XL", 
+    condition: "Like New",
+    image: "/pm2.jpg"
+  },
+  { 
+    id: 24, 
+    name: "Vintage Striped Polo", 
+    price: 220, 
+    category: "Tops", 
+    gender: "men", 
+    rating: 4, 
+    description: "Horizontal striped pattern. Soft fabric and comfortable fit.", 
+    size: "M", 
+    condition: "Good",
+    image: "/pm3.jpg"
+  },
+  { 
+    id: 25, 
+    name: "Knitted Button Polo", 
+    price: 280, 
+    category: "Tops", 
+    gender: "men", 
+    rating: 5, 
+    description: "Textured knit fabric with button-down detail. Smart and casual.", 
+    size: "M", 
+    condition: "Excellent",
+    image: "/pm4.jpg"
+  },
+  { 
+    id: 26, 
+    name: "Graphic Print Polo", 
+    price: 200, 
+    category: "Tops", 
+    gender: "men", 
+    rating: 4, 
+    description: "Fun graphic print on a classic polo silhouette.", 
+    size: "M", 
+    condition: "Very Good",
+    image: "/pm5.jpg"
+  },
+
+  // --- DRESSES (dw1 - dw4) ---
+  { 
+    id: 27, 
+    name: "Floral Midi Dress", 
+    price: 350, 
+    category: "Dresses", 
+    gender: "women", 
+    rating: 5, 
+    description: "Flowy midi dress with an all-over floral print. Perfect for brunch.", 
+    size: "S-M", 
+    condition: "Like New",
+    image: "/dw1.jpg"
+  },
+  { 
+    id: 28, 
+    name: "Vintage Slip Dress", 
+    price: 300, 
+    category: "Dresses", 
+    gender: "women", 
+    rating: 5, 
+    description: "Satin finish slip dress. Minimalist and elegant.", 
+    size: "S-M", 
+    condition: "Excellent",
+    image: "/dw2.jpg"
+  },
+  { 
+    id: 29, 
+    name: "Cottagecore Sundress", 
+    price: 400, 
+    category: "Dresses", 
+    gender: "women", 
+    rating: 5, 
+    description: "Puff sleeves and a gathered waist. The ultimate summer dress.", 
+    size: "S-M", 
+    condition: "Very Good",
+    image: "/dw3.jpg"
+  },
+  { 
+    id: 30, 
+    name: "Retro Button-Down Dress", 
+    price: 380, 
+    category: "Dresses", 
+    gender: "women", 
+    rating: 4, 
+    description: "Button-front dress with a collar. Vintage vibes all the way.", 
+    size: "S-M", 
+    condition: "Good",
+    image: "/dw4.jpg"
+  },
+
+  // --- WOMEN'S TOPS (wt1 - wt2) ---
+  { 
+    id: 31, 
+    name: "Boho Peasant Blouse", 
+    price: 220, 
+    category: "Tops", 
+    gender: "women", 
+    rating: 5, 
+    description: "Loose fitting blouse with embroidered details. Airy and light.", 
+    size: "S-M", 
+    condition: "Excellent",
+    image: "/wt1.jpg"
+  },
+  { 
+    id: 32, 
+    name: "Graphic Vintage Tee", 
+    price: 180, 
+    category: "Tops", 
+    gender: "women", 
+    rating: 5, 
+    description: "Soft cotton tee with a retro graphic print.", 
+    size: "S-M", 
+    condition: "Like New",
+    image: "/wt2.jpg"
+  },
+];

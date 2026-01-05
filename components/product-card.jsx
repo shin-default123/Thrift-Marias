@@ -3,7 +3,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { Star, Heart } from 'lucide-react';
-import { useCart } from '../contexts/cart-context';
+import { useCart } from '../contexts/cart-context.jsx';
 import { useState } from 'react';
 
 export default function ProductCard({ product, showAddButton = true }) {

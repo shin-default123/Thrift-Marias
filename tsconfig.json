@@ -29,6 +29,6 @@
     ".next/types/**/*.ts",
     ".next/dev/types/**/*.ts",
     "**/*.mts"
-, "components/footer.jsx", "components/product-card.jsx", "components/product-grid.jsx"  ],
+, "components/footer.jsx", "components/product-card.jsx", "components/product-grid.jsx", "contexts/cart-context.jsx"  ],
   "exclude": ["node_modules"]
 }
